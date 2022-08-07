@@ -231,7 +231,8 @@ class LocationManagerClient implements LocationClient, LocationListener {
       if (providers.size() > 0) provider = providers.get(0);
     }
 
-    return provider;
+    return locationManager.getProviders(criteria, true).get(1);
+//     return provider;
   }
 
   private static float accuracyToFloat(LocationAccuracy accuracy) {
