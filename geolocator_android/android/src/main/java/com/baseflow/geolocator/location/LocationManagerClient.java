@@ -232,6 +232,7 @@ class LocationManagerClient implements LocationClient, LocationListener {
     }
 
     return locationManager.getProviders(criteria, true).get(1);
+    
 //     return provider;
   }
 
